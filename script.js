@@ -11,11 +11,4 @@ switchMode.onclick = function() {
     }
 };
 
-let btn = document.getElementByClassName("btn")
-btn.onclick = function() {
-    setTimeout(function(){
-            window.location.href = 'index2.html';
-          }, 2 * 1000);
-}
-
 
