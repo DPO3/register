@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="theme">
+    <title>DeltaSRV - Регистрация</title>
+<style>
+#switchMode {
+    border: none;
+    width: 135px;
+    height: 30px;
+    color: rgb(253, 253, 253);
+    font-family: cursive, monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: large;
+}
+
+#switchMode:hover {
+    transition: 0.3s;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#switchMode:not(:hover) {
+    scale: 1;
+    transition: 0.3s;
+}
+
+#switchMode:active {
+    scale: 1;
+    transition: 0.3s;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <button id="switchMode">Сменить тему
+        </button>
+    </div>
+    <div class="container">
+        <h3 class="reg">Регистрация</h3>
+        <input type="text" placeholder="Фамилия" name="surname" id="surname">
+        <input type="text" placeholder="Имя" name="nickname" id="nickname">
+        <input type="text" placeholder="Отчество" name="famname" id="famname">
+        <input type="date" name="age" id="age">
+        <input type="password" placeholder="Пароль" name="password" id="password">
+        <input type="password" placeholder="Повтор пароля" name="cpassword" id="conf-password">
+        <span class="message"></span>
+        <button class="btn">Регистрация!</button>    
+</div>
+</body>
+<script src="script.js"></script>
+</html>
