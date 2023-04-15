@@ -9,6 +9,4 @@ switchMode.onclick = function() {
     } else {
         theme.href = "style.css";
     }
-};
-
-
+}
