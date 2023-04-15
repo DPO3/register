@@ -9,8 +9,13 @@ switchMode.onclick = function() {
     } else {
         theme.href = "style.css";
     }
-} 
+};
 
-
+let switchMode = document.getElementById("switchMode")
+switchMode.onclick = function() {
+    setTimeout(function(){
+            window.location.href = 'index2.html';
+          }, 2 * 1000);
+}
 
 
